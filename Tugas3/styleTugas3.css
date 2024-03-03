@@ -28,6 +28,8 @@ table{
     background-color: rgba(203, 199, 193, 0.614);
     height: 50px;
     overflow: auto;
+    display: inline-block;
+    width: 300;
 }
 
 .logo{
@@ -35,6 +37,7 @@ table{
     margin-bottom: 50px;
     margin-left: 50px;
 }
+
 
 
 
