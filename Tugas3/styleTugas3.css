@@ -13,10 +13,21 @@ body{
 
 #h1, #h2, #h3{
     color: rgb(148, 6, 6);
+    background-color: beige;
 }
 
 ul{
     color: rgb(184, 89, 21);
+}
+
+table{
+    background-color: rgb(234, 236, 236);
+}
+
+.list{
+    background-color: rgba(203, 199, 193, 0.614);
+    height: 50px;
+    overflow: auto;
 }
 
 
