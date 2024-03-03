@@ -11,6 +11,13 @@ body{
     text-align: right;
 }
 
+#h1, #h2, #h3{
+    color: rgb(148, 6, 6);
+}
+
+ul{
+    color: rgb(184, 89, 21);
+}
 
 
 
