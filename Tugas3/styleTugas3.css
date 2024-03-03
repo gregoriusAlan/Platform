@@ -30,12 +30,13 @@ table{
     overflow: auto;
     display: inline-block;
     width: 300;
+    padding-left: 50px;
 }
 
 .logo{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 
 
