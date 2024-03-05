@@ -40,6 +40,10 @@ table{
     margin-left: 50px; 
 }
 
+#p1 span, #p2 span{
+    color: rgb(38, 139, 170);
+}
+
 
 
 
