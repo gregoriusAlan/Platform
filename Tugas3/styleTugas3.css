@@ -49,6 +49,12 @@ table{
     margin-left: 10px;
 }
 
+.endbar {
+    text-align: center; /* Posisi teks menjadi rata tengah */
+    margin-top: 20px; /* Margin atas */
+    color: #777; /* Warna teks */
+}
+
 
 
 
