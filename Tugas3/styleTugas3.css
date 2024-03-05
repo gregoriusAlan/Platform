@@ -44,6 +44,11 @@ table{
     color: rgb(38, 139, 170);
 }
 
+.link ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
 
 
 
