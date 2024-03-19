@@ -62,6 +62,25 @@ function inputPilih() {
         inputHobi();
         ok.disabled = true;
     });
-    
 }
+
+function inputHobi() {
+    const containDrop = document.createElement('div');
+    containDrop.setAttribute('class', 'form-group');
+
+    const hobiLabel = document.createElement('label');
+    hobiLabel.textContent = 'Hobi';
+    hobiLabel.setAttribute('for', 'hobi');
+
+    const hobiSelect = document.createElement('select');
+    hobiSelect.setAttribute('id', 'hobi');
+
+    const hobi = ['membaca', 'sepakbola'];
+
+    hobi.forEach(function(hobi) {
+        const optionElement = document.createElement('option');
+        optionElement.textContent = hobi;
+        // optionElement.value = hobi;
+        hobiSelect.appendChild(optionElement);
+    });
    
