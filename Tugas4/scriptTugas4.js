@@ -62,5 +62,6 @@ function inputPilih() {
         inputHobi();
         ok.disabled = true;
     });
+    
 }
    
