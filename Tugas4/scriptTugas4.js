@@ -64,7 +64,7 @@ function inputPilih() {
     });
 }
 
-function inputHobi() {
+//function inputHobi() {
     const containDrop = document.createElement('div');
     containDrop.setAttribute('class', 'form-group');
 
@@ -77,10 +77,26 @@ function inputHobi() {
 
     const hobi = ['membaca', 'sepakbola'];
 
-    hobi.forEach(function(hobi) {
+    //hobi.forEach(function(hobi) {
         const optionElement = document.createElement('option');
         optionElement.textContent = hobi;
         // optionElement.value = hobi;
         hobiSelect.appendChild(optionElement);
-    });
+    //});
+
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = 'Pilih Hobi';
+    defaultOption.setAttribute('disabled', 'disabled');
+    defaultOption.setAttribute('selected', 'selected');
+    hobiSelect.insertBefore(defaultOption, hobiSelect.firstChild);
+
+    containDrop.appendChild(hobiLabel);
+    containDrop.appendChild(hobiSelect);
+    container.appendChild(containDrop);
+
+    const ok1 = document.createElement('button');
+    ok1.type = 'submit';
+    ok1.setAttribute('id', 'btn_ok');
+    ok1.textContent = 'submit';
+    container.appendChild(ok1);
    
