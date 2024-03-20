@@ -56,7 +56,7 @@ function inputPilih() {
     okb.addEventListener('click', function(e) {
         const inp = document.querySelectorAll('#pilihan')
         for (let index = 0; index < inp.length; index++) {
-            tamp[index] = inp[index].value;
+            tampung[index] = inp[index].value;
 
         }
         inputHobi();
@@ -64,7 +64,7 @@ function inputPilih() {
     });
 }
 
-//function inputHobi() {
+    function inputHobi() {
     const containDrop = document.createElement('div');
     containDrop.setAttribute('class', 'form-group');
 
@@ -77,12 +77,12 @@ function inputPilih() {
 
     const hobi = ['membaca', 'sepakbola'];
 
-    //hobi.forEach(function(hobi) {
+    hobi.forEach(function(hobi) {
         const optionElement = document.createElement('option');
         optionElement.textContent = hobi;
         // optionElement.value = hobi;
         hobiSelect.appendChild(optionElement);
-    //});
+    });
 
     const defaultOption = document.createElement('option');
     defaultOption.textContent = 'Pilih Hobi';
@@ -99,4 +99,22 @@ function inputPilih() {
     ok1.setAttribute('id', 'btn_ok');
     ok1.textContent = 'submit';
     container.appendChild(ok1);
+
+    const tombol_OK = document.querySelector('#btn_ok');
+    tombol_OK.addEventListener('click', function(e) {
+        const nama = namaInput.value;
+        const jmlpil = pilihanInput.value;
+
+        for (let i = 0; i < tampung.length; i++) {
+            txtARy += ' pilihan ' + (i + 1) + ' ' + tampung[i] + ', ';
+
+        }
+
+        tombol_OK.disabled = true;
+        const hb = document.getElementById('hobi');
+        const Hobi = hb.value;
+        const txt = "<p>" + 'saya ' + nama + ' memilih pilihan sejumlah ' + jmlpil + ' meliputi ' + txtARy + 'Memiliki hobi ' + Hobi + "</p>";
+        container.insertAdjacentHTML('beforeend', txt);
+    });
+}
    
