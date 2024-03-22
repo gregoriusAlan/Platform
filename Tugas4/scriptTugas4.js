@@ -75,7 +75,7 @@ function inputPilih() {
     const hobiSelect = document.createElement('select');
     hobiSelect.setAttribute('id', 'hobi');
 
-    const hobi = ['membaca', 'sepakbola'];
+    const hobi = ['Musik', 'Olahraga'];
 
     hobi.forEach(function(hobi) {
         const optionElement = document.createElement('option');
