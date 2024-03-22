@@ -1,19 +1,24 @@
-.Tugas4.html{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 60;
-    padding-left: 80;
+.contain{
+    width: 350px;
+    height: auto;
+    margin: 10% 10%;
+    background-color: azure;
+    padding: 50px;
 }
-.container{
+body{
     background-color: rgb(107, 154, 154);
-    width: 500px;
-    height: 250px;
+    width: 50cm;
+    height: 50cm;
+}
+.form-group{
+    display: flex;
+    padding: 5px;
 }
 
 label{
-    height: 8;
-    
+    flex: 1;
+}
+
+h4{
+    text-align: center;
 }
