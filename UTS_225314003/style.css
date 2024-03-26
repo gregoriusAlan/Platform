@@ -1,0 +1,9 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    background-color: #5de2d7;
+}
+
+.section:nth-child(odd) {
+    background-color: #3e788b;
+}
