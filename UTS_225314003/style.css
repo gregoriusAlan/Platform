@@ -19,7 +19,7 @@
 
 .jumbotron {
     height: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 #kisahku {
@@ -30,7 +30,7 @@
     overflow: auto;
 }
 
-/* Css Tugas */
+
 #InputNama,
 #inputJumlah {
     display: flex;
@@ -98,13 +98,13 @@ button {
 }
 
 button:hover {
-    background-color: #008CBA;
+    background-color: #ea5eec;
 }
 
 #hasilTampil {
     text-align: center;
     font-size: 23px;
-    color: #a4825b59;
+    color: #e560dcdc;
     text-transform: capitalize;
     float: left;
 }
