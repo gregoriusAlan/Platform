@@ -46,3 +46,57 @@ if (isset($_POST['add'])) {
   </style>
   <title>ToDoList</title>
 </head>
+
+<body>
+  <section class="vh-100">
+    <!-- <form action="insert.php" method="GET"> -->
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+            <div class="card-body py-4 px-4 px-md-5">
+
+              <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                <i class="fas fa-check-square me-1"></i>
+                <u>My Todo-s</u>
+              </p>
+
+              <div class="pb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="insert.php" method="POST">
+                      <div class="d-flex flex-row align-items-center">
+                        <input type="text" name="list" class="form-control form-control-lg"
+                          id="exampleFormControlInput1" placeholder="Add new task...">
+                        <div>
+                          <button type="submit" name="submitAdd" class="btn btn-primary">Add</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+              <?php include 'tampil.php'; ?>
+
+              <div class="pb-2" style="display: flex; justify-content: flex-end; padding-top: 2em;">
+                <div class="d-flex flex-row align-items-center">
+                  <form action="logOut.php" method="POST">
+                    <div>
+                      <button type="submit" class="btn btn-primary">LogOut</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </form> -->
+  </section>
+</body>
+
+</html>
