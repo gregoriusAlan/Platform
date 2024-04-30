@@ -88,8 +88,8 @@ $result = mysqli_query($conn, $sql);
     <ul>
         <?php while ($row = mysqli_fetch_assoc($result)) : ?>
             <li>
-                <?php echo $row['todolist']; ?> - <?php echo $row['status']; ?>
-                <form method="post" action="todoList.php">
+                <?php echo $row['toDoList']; ?> - <?php echo $row['status']; ?>
+                <form method="post" action="toDoList.php">
                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <input type="submit" name="selesai" value="Selesai">
                 </form>
